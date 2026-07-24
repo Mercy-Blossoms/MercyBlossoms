@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF4E8;
+  color: #2B2013;
+}
+
+::selection {
+  background-color: #E4C77A;
+  color: #2B2013;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #A73A3E;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.branch-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #C79A3E;
+}
+.branch-divider::before,
+.branch-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(to right, transparent, #C79A3E, transparent);
+}
+
+.paper-edge {
+  box-shadow:
+    0 1px 0 rgba(43,32,19,0.06),
+    0 12px 30px -14px rgba(43,32,19,0.35);
+}
