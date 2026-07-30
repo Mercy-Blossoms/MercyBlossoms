@@ -2,12 +2,12 @@ import { NextResponse } from "next/server";
 
 const KIT_FORM_ID = process.env.KIT_FORM_ID || "9738679";
 
-function isValidEmail(email) {
+function isValidEmail(email: unknown): email is string {
   return typeof email === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-export async function POST(request) {
-  let body;
+export async function POST(request: Request) {
+  let body: { email?: string };
   try {
     body = await request.json();
   } catch {
