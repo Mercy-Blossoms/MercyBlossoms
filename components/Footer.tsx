@@ -51,16 +51,6 @@ export default function Footer() {
               aislingbihari@mercyblossoms.com
             </a>
           </div>
-
-          <div>
-            <p className="font-display text-xs uppercase tracking-[0.25em] text-gold-light">
-              A Note on This Mockup
-            </p>
-            <p className="mt-3 text-sm text-parchment/70">
-              This is an early prototype. Pricing and some copy are still
-              placeholders while the site takes shape.
-            </p>
-          </div>
         </div>
 
         <p className="mt-10 border-t border-parchment/10 pt-6 text-xs text-parchment/50">
